@@ -1,20 +1,20 @@
 export const educations = [
   {
     id: 1,
-    title: "Bachelor Degree",
-    duration: "2020 - Present",
-    institution: "National University of Bangladesh",
+    title: "Full Stack Web Development",
+    duration: "2024 December - Present",
+    institution: "Uki Technoilogy School",
   },
   {
     id: 2,
-    title: "Higher Secondary Certificate",
-    duration: "2018 - 2020",
-    institution: "Noakhali Islamia Kamil Madrasah",
+    title: "Advanced Level",
+    duration: "2021 - 2024",
+    institution: "J/Chavakachcheri Hindu College",
   },
   {
     id: 3,
-    title: "Secondary School Certificate",
-    duration: "2008 - 2018",
-    institution: "Baitus Saif Islamia Madrasah",
+    title: "Ordinary Level",
+    duration: "2019 - 2021",
+    institution: "J/Chavakachcheri Hindu College",
   }
 ]
