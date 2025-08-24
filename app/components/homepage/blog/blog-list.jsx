@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import BlogCard from "./blog-card";
 
 export default function BlogList({ blogs, BlogComponent }) {
   const [shuffledBlogs, setShuffledBlogs] = useState([]);
