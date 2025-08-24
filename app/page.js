@@ -17,8 +17,7 @@ async function getData() {
 
   const data = await res.json();
 
-  const filtered = data.filter((item) => item?.cover_image).sort(() => Math.random() - 0.5);
-
+  const filtered = data.filter((item) => item?.cover_image);
   return filtered;
 };
 
@@ -26,14 +25,13 @@ export default async function Home() {
   const blogs = await getData();
 
   return (
-    <div suppressHydrationWarning >
+    <div suppressHydrationWarning>
       <HeroSection />
       <AboutSection />
- 
       <Skills />
       <Projects />
       <Education />
-      
+      <Blog blogs={blogs} />
       <ContactSection />
     </div>
   )

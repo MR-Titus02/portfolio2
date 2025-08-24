@@ -1,9 +1,12 @@
-"use client"
+'use client';
 
 import { useEffect } from 'react';
 
-const GlowCard = ({ children , identifier}) => {
+const GlowCard = ({ children, identifier }) => {
   useEffect(() => {
+    // Check if window/document exists (safe for SSR)
+    if (typeof document === 'undefined') return;
+
     const CONTAINER = document.querySelector(`.glow-container-${identifier}`);
     const CARDS = document.querySelectorAll(`.glow-card-${identifier}`);
 
@@ -62,7 +65,7 @@ const GlowCard = ({ children , identifier}) => {
     RESTYLE();
     UPDATE();
 
-    // Cleanup event listener
+    // Cleanup
     return () => {
       document.body.removeEventListener('pointermove', UPDATE);
     };
@@ -70,7 +73,9 @@ const GlowCard = ({ children , identifier}) => {
 
   return (
     <div className={`glow-container-${identifier} glow-container`}>
-      <article className={`glow-card glow-card-${identifier} h-fit cursor-pointer border border-[#2a2e5a] transition-all duration-300 relative bg-[#101123] text-gray-200 rounded-xl hover:border-transparent w-full`}>
+      <article
+        className={`glow-card glow-card-${identifier} h-fit cursor-pointer border border-[#2a2e5a] transition-all duration-300 relative bg-[#101123] text-gray-200 rounded-xl hover:border-transparent w-full`}
+      >
         <div className="glows"></div>
         {children}
       </article>
