@@ -9,17 +9,23 @@ import Projects from "./components/homepage/projects";
 import Skills from "./components/homepage/skills";
 
 async function getData() {
-  const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`)
+  const res = await fetch(
+    "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@titusroxsan",
+    { next: { revalidate: 3600 } } // ISR: 1 hour
+  );
 
   if (!res.ok) {
-    throw new Error('Failed to fetch data')
+    throw new Error("Failed to fetch Medium blogs");
   }
 
   const data = await res.json();
 
-  const filtered = data.filter((item) => item?.cover_image);
+  // Medium posts are inside `items`
+  const filtered = data.items.filter((item) => item?.thumbnail);
+
   return filtered;
-};
+}
+
 
 export default async function Home() {
   const blogs = await getData();
@@ -31,7 +37,7 @@ export default async function Home() {
       <Skills />
       <Projects />
       <Education />
-      {/* <Blog blogs={blogs} /> */}
+      <Blog blogs={blogs} />
       <ContactSection />
     </div>
   

@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import BlogCard from "./blog-card";
 
-export default function BlogList({ blogs, BlogComponent }) {
+export default function BlogList({ blogs }) {
   const [shuffledBlogs, setShuffledBlogs] = useState([]);
 
   useEffect(() => {
