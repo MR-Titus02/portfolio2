@@ -132,15 +132,15 @@ function HeroSection() {
               <div>
                 <span className="ml-4 lg:ml-8 text-white mr-2">interests:</span>
                 <span className="text-gray-400">[</span>
-                <span className="text-amber-300">"Full Stack Development"</span>
+                <span className="text-amber-300">&quot;Full Stack Development&quot;</span>
                 <span className="text-gray-400">, </span>
-                <span className="text-amber-300">"Cybersecurity"</span>
+                <span className="text-amber-300">&quot;Cybersecurity&quot;</span>
                 <span className="text-gray-400">, </span>
-                <span className="text-amber-300">"System Design"</span>
+                <span className="text-amber-300">&quot;System Design&quot;</span>
                 <span className="text-gray-400">]</span>
                 <span className="text-gray-400">,</span>
               </div>
-
+              
               {/* APPROACH */}
               <div>
                 <span className="ml-4 lg:ml-8 text-white mr-2">approach:</span>
