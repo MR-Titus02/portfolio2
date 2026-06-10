@@ -83,6 +83,21 @@ import linux from '../app/assets/svg/skills/linux.svg'
 import sqlalchemy from '../app/assets/svg/skills/sqlalchemy.svg'
 import fastapi from '../app/assets/svg/skills/fastapi.svg'
 
+import githubactions from '../app/assets/svg/skills/githubactions.svg';
+import nodejs from '../app/assets/svg/skills/Node.js.svg';
+import hono from '../app/assets/svg/skills/Hono.svg';
+import expressjs from '../app/assets/svg/skills/Express.svg';
+import jwt from '../app/assets/svg/skills/jwt.svg';
+import restapi from '../app/assets/svg/skills/RestApi.svg';
+import VSCode from '../app/assets/svg/skills/VSCode.svg';
+import postman from '../app/assets/svg/skills/postman.svg';
+import owasptop10 from '../app/assets/svg/skills/owasptop10.svg';
+import github from '../app/assets/svg/skills/github.svg';
+import supabase from '../app/assets/svg/skills/supabase.svg';
+import vercel from '../app/assets/svg/skills/vercel.svg';
+import netlify from '../app/assets/svg/skills/netlify.svg';
+import zod from '../app/assets/svg/skills/zod.svg';
+
 
 
 export const skillsImage = (skill) => {
@@ -254,6 +269,36 @@ export const skillsImage = (skill) => {
       return sqlalchemy;
     case 'fastapi':
       return fastapi;
+    case 'github actions':
+      return githubactions;
+    case 'node js':
+      return nodejs;
+    case 'hono':
+      return hono;
+    case 'express js':
+      return expressjs;
+    case 'jwt':
+      return jwt;
+    case 'rest apis':
+      return restapi;
+    case 'vscode':
+      return VSCode;
+    case 'PostgreSQL':
+      return postgresql;
+    case 'postman':
+      return postman;
+    case 'owasp top 10':
+      return owasptop10;
+    case 'github':
+      return github;
+    case 'supabase':
+      return supabase;
+    case 'vercel':
+      return vercel;
+    case 'netlify':
+      return netlify;
+    case 'zod':
+      return zod;
     default:
       break;
   }
