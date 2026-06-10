@@ -7,7 +7,7 @@ export const projectsData = [
     tools: ["Python", "File Handling", "Exception Handling", "Data Structures"],
     role: "Software Developer",
     demo: "",
-    code: "",
+    code: "https://github.com/MR-Titus02/Airline-Reservation",
   },
   {
     id: 2,
@@ -30,8 +30,7 @@ export const projectsData = [
   {
     id: 3,
     name: "DreamRoute - AI-Assisted Career Guidance Platform",
-    description:
-      "I developed a web application that recommends personalized learning paths based on a user's career level, educational background, interests, and goals. The system suggests courses from a database fed by the institution/admin, while AI generates detailed course insights and multi-branch roadmap visualizations. Implemented security features including role-based access control, JWT authorization, authentication, and login limiters. Built using MERN stack, with React Timeline and React Flow for roadmap visualization, focusing on secure, intuitive, and guided career progression.",
+    description: "Developed a web app that recommends personalized learning paths based on career level, education, interests, and goals. It suggests courses from an admin-managed database, with AI-generated insights and multi-branch roadmap visualizations. Implemented RBAC, JWT authentication, and login limiters. Built with MERN stack using React Timeline and React Flow for a secure, intuitive experience.",
     tools: [
       "MongoDB",
       "Express.js",
