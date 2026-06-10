@@ -114,7 +114,7 @@ function HeroSection() {
               {/* ROLE */}
               <div>
                 <span className="ml-4 lg:ml-8 text-white mr-2">role:</span>
-                <span className="text-emerald-400">"Software Engineer"</span>
+                <span className="text-emerald-400">&quot;Software Engineer&quot;</span>
                 <span className="text-gray-400">,</span>
               </div>
 
@@ -122,8 +122,8 @@ function HeroSection() {
               <div>
                 <span className="ml-4 lg:ml-8 text-white mr-2">summary:</span>
                 <span className="text-cyan-400">
-                  "I build clean and practical web applications, with a focus on
-                  performance, usability, and real-world impact."
+                  &quot;I build clean and practical web applications, with a focus on
+                  performance, usability, and real-world impact.&quot;
                 </span>
                 <span className="text-gray-400">,</span>
               </div>
@@ -145,7 +145,7 @@ function HeroSection() {
               <div>
                 <span className="ml-4 lg:ml-8 text-white mr-2">approach:</span>
                 <span className="text-violet-400">
-                  "Understand deeply. Build simply. Improve continuously."
+                  &quot;Understand deeply. Build simply. Improve continuously.&quot;
                 </span>
                 <span className="text-gray-400">,</span>
               </div>
@@ -154,8 +154,8 @@ function HeroSection() {
               <div>
                 <span className="ml-4 lg:ml-8 text-white mr-2">currently:</span>
                 <span className="text-sky-400">
-                  "Building products and exploring security-focused
-                  engineering."
+                  &quot;Building products and exploring security-focused
+                  engineering.&quot;
                 </span>
                 <span className="text-gray-400">,</span>
               </div>
@@ -179,7 +179,7 @@ function HeroSection() {
               <div>
                 <span className="ml-12 lg:ml-24 text-cyan-400">true</span>
                 <span className="text-gray-400"> &amp;&amp; </span>
-                <span className="text-amber-300">"Ready to build impact"</span>
+                <span className="text-amber-300">&quot;Ready to build impact&quot;</span>
               </div>
 
               <div>
