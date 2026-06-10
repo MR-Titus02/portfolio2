@@ -95,8 +95,8 @@ import owasptop10 from '../app/assets/svg/skills/owasptop10.svg';
 import github from '../app/assets/svg/skills/GitHub.svg';
 import supabase from '../app/assets/svg/skills/supabase.svg';
 import vercel from '../app/assets/svg/skills/Vercel.svg';
-import netlify from '../app/assets/svg/skills/netlify.svg';
-import zod from '../app/assets/svg/skills/zod.svg';
+import netlify from '../app/assets/svg/skills/Netlify.svg';
+import zod from '../app/assets/svg/skills/Zod.svg';
 
 
 
